@@ -1,6 +1,6 @@
 export function user(){
     let userInfo = {
-        username:"Suraj",
+        username:"Suraj Kumar",
         age:35
     }
     return userInfo.username;

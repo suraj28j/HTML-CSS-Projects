@@ -4,7 +4,8 @@
   "description": "webpack module bundler",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --config config.prod.js",
+    "start": "webpack-dev-server --mode development --open  --config config.dev.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,10 @@
   "dependencies": {
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack-dev-server": "^5.2.0"
   }
 }
