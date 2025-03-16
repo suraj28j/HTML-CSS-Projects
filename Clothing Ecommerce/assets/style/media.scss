@@ -1,0 +1,38 @@
+@media only screen and (max-width:768px){
+    header{
+        grid-template-columns: 90% 10%;
+        font-size: 1.2rem;
+
+        #hamburgerIcon{
+            visibility:visible;
+        }
+
+        nav{
+            grid-template-columns: 1fr;
+            padding: 1rem;
+            display: none;
+
+            ul{
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            form{
+                width: max-content;
+                margin: 1rem 0;
+            }
+
+            #cartIcons_section{
+                width: max-content;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    // main style start //
+    main{
+        #section1{
+            grid-template-columns: 1fr;
+        }
+    }
+}
