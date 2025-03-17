@@ -1,28 +1,28 @@
-@media only screen and (max-width:768px){
-    header{
+@media only screen and (max-width:768px) {
+    header {
         grid-template-columns: 90% 10%;
         font-size: 1.2rem;
 
-        #hamburgerIcon{
-            visibility:visible;
+        #hamburgerIcon {
+            visibility: visible;
         }
 
-        nav{
+        nav {
             grid-template-columns: 1fr;
             padding: 1rem;
             display: none;
 
-            ul{
+            ul {
                 grid-template-columns: 1fr;
                 gap: 0.5rem;
             }
 
-            form{
+            form {
                 width: max-content;
                 margin: 1rem 0;
             }
 
-            #cartIcons_section{
+            #cartIcons_section {
                 width: max-content;
                 grid-template-columns: 1fr;
             }
@@ -30,9 +30,41 @@
     }
 
     // main style start //
-    main{
-        #section1{
+    main {
+        #section1 {
             grid-template-columns: 1fr;
+
+            div:first-child {
+                h2 {
+                    font-size: 4rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        #section2 {
+            section {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:426px) {
+
+    main {
+        #section1{
+            div:first-child {
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+        }
+        #section2 {
+            section {
+                grid-template-columns: 1fr;
+            }
         }
     }
 }
