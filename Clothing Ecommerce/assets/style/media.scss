@@ -38,14 +38,26 @@
                 h2 {
                     font-size: 4rem;
                 }
-                p{
+
+                p {
                     font-size: 1.5rem;
                 }
             }
         }
+
         #section2 {
+            margin-top: 5rem;
             section {
                 grid-template-columns: 1fr 1fr;
+                padding: 0;
+                margin-top: 2rem;
+            }
+        }
+
+        #section3 {
+            section {
+                grid-template-columns: 1fr 1fr;
+                padding: 0;
             }
         }
     }
@@ -54,14 +66,21 @@
 @media only screen and (max-width:426px) {
 
     main {
-        #section1{
+        #section1 {
             div:first-child {
                 h2 {
                     font-size: 3rem;
                 }
             }
         }
+
         #section2 {
+            section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        #section3 {
             section {
                 grid-template-columns: 1fr;
             }
