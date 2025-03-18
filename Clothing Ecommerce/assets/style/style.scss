@@ -34,8 +34,8 @@ a {
     font-size: 0.9rem;
 
     &:hover {
-        border: 1px solid;
-        color: $bg-color3;
+        border: 1px solid $bg-color1;
+        color: $bg-color1;
         background-color: $bg-color2;
     }
 }
@@ -67,6 +67,7 @@ header {
         list-style: none;
         display: grid;
         grid-template-columns: repeat(5, auto);
+        font-weight: 550;
     }
 
     form div {
@@ -104,6 +105,7 @@ header {
 }
 
 // ----x---- Header Style End ----x--- //
+
 
 // Main style Start //
 
@@ -170,7 +172,7 @@ main {
                 img {
                     width: 100%;
                     height: 100%;
-                    border-radius: 10px;
+                    border-radius: 5px;
                 }
 
                 h4 {
@@ -180,38 +182,112 @@ main {
         }
     }
 
-    #section3 {
+    #section3,#section5 {
         padding: 2rem;
+
+        h2{
+            span{color: $font-color1}
+        }
+
         button {
             @include btn($bg-color1);
             margin: 0 0.2rem
         }
 
-        section{
+        section {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 3rem;
-            padding: 1rem;
+            padding: 1.5rem;
             margin-top: 1rem;
 
-            .item_info{
+            .item_info {
                 border: 1px solid $bg-color1;
                 border-radius: 10px;
                 padding: 0.5rem;
                 display: grid;
                 gap: 0.7rem;
 
-                img{
+                img {
                     width: 100%;
-                    // height: 50%;
-                    border-radius: 10px;
+                    border-radius: 5px;
                 }
 
-                div{
+                button {
+                    @include btn($bg-color1);
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+
+                }
+
+                div {
                     display: grid;
                     grid-template-columns: 20% 20% 60%;
                     justify-items: end;
                 }
+            }
+        }
+    }
+
+    #section4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+
+        #dealOfDay {
+            background-image: url("../images/deals-1.jpg");
+        }
+
+        #womensClothsDeal {
+            background-image: url("../images/deals-2.png");
+        }
+
+        #dealOfDay,
+        #womensClothsDeal {
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 3rem 2rem;
+            display: grid;
+            gap: 1.3rem;
+
+            h2 {
+                font-size: 2rem;
+                color: $font-color1;
+            }
+
+            #countdownTimer {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr) 50%;
+
+                .ct {
+                    display: grid;
+                    gap: 0.5rem;
+                    justify-items: center;
+                    font-size: smaller;
+
+                    div {
+                        width: 4rem;
+                        height: 4rem;
+                        background-color: $bg-color1;
+                        border-radius: 10px;
+                        color: $font-color2;
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                        display: grid;
+                        justify-items: center;
+                        align-items: center;
+                    }
+                }
+
+            }
+
+            button {
+                @include btn($bg-color1);
+                width: 10rem;
+                height: 3rem;
+                border-radius: 25px;
             }
         }
     }

@@ -33,6 +33,7 @@
     main {
         #section1 {
             grid-template-columns: 1fr;
+            height: 100%;
 
             div:first-child {
                 h2 {
@@ -46,7 +47,6 @@
         }
 
         #section2 {
-            margin-top: 5rem;
             section {
                 grid-template-columns: 1fr 1fr;
                 padding: 0;
@@ -54,11 +54,16 @@
             }
         }
 
-        #section3 {
+        #section3,#section5 {
             section {
                 grid-template-columns: 1fr 1fr;
+                gap: 2rem;
                 padding: 0;
             }
+        }
+
+        #section4 {
+            grid-template-columns: 1fr;
         }
     }
 }
@@ -67,7 +72,11 @@
 
     main {
         #section1 {
+            gap: 2rem;
+
             div:first-child {
+                padding: 0.5rem;
+
                 h2 {
                     font-size: 3rem;
                 }
@@ -77,12 +86,34 @@
         #section2 {
             section {
                 grid-template-columns: 1fr;
+                gap: 1rem;
             }
         }
 
-        #section3 {
+        #section3,#section5 {
             section {
                 grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+        #section4 {
+
+            #dealOfDay,
+            #womensClothsDeal {
+                background-size: 100% 100%;
+
+                #countdownTimer {
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 0.5rem;
+
+                    .ct {
+                        div {
+                            width: 3.5rem;
+                            height: 3.5rem;
+                        }
+                    }
+                }
             }
         }
     }

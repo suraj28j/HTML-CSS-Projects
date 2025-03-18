@@ -36,6 +36,7 @@ header nav ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, auto);
+  font-weight: 550;
 }
 header form div {
   border: 1px solid;
@@ -96,8 +97,8 @@ main #section1 div:first-child button {
   font-size: 0.9rem;
 }
 main #section1 div:first-child button:hover {
-  border: 1px solid;
-  color: #000000;
+  border: 1px solid #218F76;
+  color: #218F76;
   background-color: #FFFFFF;
 }
 main #section1 img {
@@ -129,15 +130,18 @@ main #section2 section div {
 main #section2 section div img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 main #section2 section div h4 {
   margin-top: 0.5rem;
 }
-main #section3 {
+main #section3, main #section5 {
   padding: 2rem;
 }
-main #section3 button {
+main #section3 h2 span, main #section5 h2 span {
+  color: #218F76;
+}
+main #section3 button, main #section5 button {
   width: 5.5rem;
   height: 2.2rem;
   cursor: pointer;
@@ -149,31 +153,121 @@ main #section3 button {
   font-size: 0.9rem;
   margin: 0 0.2rem;
 }
-main #section3 button:hover {
-  border: 1px solid;
-  color: #000000;
+main #section3 button:hover, main #section5 button:hover {
+  border: 1px solid #218F76;
+  color: #218F76;
   background-color: #FFFFFF;
 }
-main #section3 section {
+main #section3 section, main #section5 section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 1rem;
 }
-main #section3 section .item_info {
+main #section3 section .item_info, main #section5 section .item_info {
   border: 1px solid #218F76;
   border-radius: 10px;
   padding: 0.5rem;
   display: grid;
   gap: 0.7rem;
 }
-main #section3 section .item_info img {
+main #section3 section .item_info img, main #section5 section .item_info img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
-main #section3 section .item_info div {
+main #section3 section .item_info button, main #section5 section .item_info button {
+  width: 5.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #218F76;
+  font-weight: 900;
+  font-size: 0.9rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+main #section3 section .item_info button:hover, main #section5 section .item_info button:hover {
+  border: 1px solid #218F76;
+  color: #218F76;
+  background-color: #FFFFFF;
+}
+main #section3 section .item_info div, main #section5 section .item_info div {
   display: grid;
   grid-template-columns: 20% 20% 60%;
   justify-items: end;
+}
+main #section4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+main #section4 #dealOfDay {
+  background-image: url("../images/deals-1.jpg");
+}
+main #section4 #womensClothsDeal {
+  background-image: url("../images/deals-2.png");
+}
+main #section4 #dealOfDay,
+main #section4 #womensClothsDeal {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+  display: grid;
+  gap: 1.3rem;
+}
+main #section4 #dealOfDay h2,
+main #section4 #womensClothsDeal h2 {
+  font-size: 2rem;
+  color: #218F76;
+}
+main #section4 #dealOfDay #countdownTimer,
+main #section4 #womensClothsDeal #countdownTimer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 50%;
+}
+main #section4 #dealOfDay #countdownTimer .ct,
+main #section4 #womensClothsDeal #countdownTimer .ct {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  font-size: smaller;
+}
+main #section4 #dealOfDay #countdownTimer .ct div,
+main #section4 #womensClothsDeal #countdownTimer .ct div {
+  width: 4rem;
+  height: 4rem;
+  background-color: #218F76;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+main #section4 #dealOfDay button,
+main #section4 #womensClothsDeal button {
+  width: 5.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #218F76;
+  font-weight: 900;
+  font-size: 0.9rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 25px;
+}
+main #section4 #dealOfDay button:hover,
+main #section4 #womensClothsDeal button:hover {
+  border: 1px solid #218F76;
+  color: #218F76;
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

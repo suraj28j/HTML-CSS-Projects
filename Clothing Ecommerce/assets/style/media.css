@@ -27,6 +27,7 @@
   }
   main #section1 {
     grid-template-columns: 1fr;
+    height: 100%;
   }
   main #section1 div:first-child h2 {
     font-size: 4rem;
@@ -34,27 +35,50 @@
   main #section1 div:first-child p {
     font-size: 1.5rem;
   }
-  main #section2 {
-    margin-top: 5rem;
-  }
   main #section2 section {
     grid-template-columns: 1fr 1fr;
     padding: 0;
     margin-top: 2rem;
   }
-  main #section3 section {
+  main #section3 section, main #section5 section {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     padding: 0;
+  }
+  main #section4 {
+    grid-template-columns: 1fr;
   }
 }
 @media only screen and (max-width: 426px) {
+  main #section1 {
+    gap: 2rem;
+  }
+  main #section1 div:first-child {
+    padding: 0.5rem;
+  }
   main #section1 div:first-child h2 {
     font-size: 3rem;
   }
   main #section2 section {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  main #section3 section {
+  main #section3 section, main #section5 section {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  main #section4 #dealOfDay,
+  main #section4 #womensClothsDeal {
+    background-size: 100% 100%;
+  }
+  main #section4 #dealOfDay #countdownTimer,
+  main #section4 #womensClothsDeal #countdownTimer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  main #section4 #dealOfDay #countdownTimer .ct div,
+  main #section4 #womensClothsDeal #countdownTimer .ct div {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }/*# sourceMappingURL=media.css.map */
