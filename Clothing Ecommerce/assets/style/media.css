@@ -24,6 +24,7 @@
     width: -moz-max-content;
     width: max-content;
     grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
   main #section1 {
     grid-template-columns: 1fr;
@@ -48,6 +49,26 @@
   main #section4 {
     grid-template-columns: 1fr;
   }
+  main #section6 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.8rem;
+  }
+  main #section6 .outlet {
+    gap: 1rem;
+  }
+  main #section6 .outlet div {
+    gap: 0.5rem;
+  }
+  footer #email_section {
+    grid-template-columns: repeat(3, auto);
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  footer #address_section {
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+    justify-items: start;
+  }
 }
 @media only screen and (max-width: 426px) {
   main #section1 {
@@ -59,17 +80,28 @@
   main #section1 div:first-child h2 {
     font-size: 3rem;
   }
+  main #section2 {
+    padding: 1rem;
+  }
   main #section2 section {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  main #section3, main #section5 {
+    padding: 1rem;
+    place-items: center;
   }
   main #section3 section, main #section5 section {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  main #section4 {
+    padding: 1rem;
+  }
   main #section4 #dealOfDay,
   main #section4 #womensClothsDeal {
     background-size: 100% 100%;
+    padding: 1.5rem 1rem;
   }
   main #section4 #dealOfDay #countdownTimer,
   main #section4 #womensClothsDeal #countdownTimer {
@@ -80,5 +112,18 @@
   main #section4 #womensClothsDeal #countdownTimer .ct div {
     width: 3.5rem;
     height: 3.5rem;
+  }
+  main #section6 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+  }
+  footer #email_section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.1rem;
+    padding: 1rem;
+  }
+  footer #address_section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=media.css.map */

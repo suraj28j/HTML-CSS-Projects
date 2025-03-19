@@ -25,6 +25,7 @@
             #cartIcons_section {
                 width: max-content;
                 grid-template-columns: 1fr;
+                gap: 0.5rem;
             }
         }
     }
@@ -65,6 +66,32 @@
         #section4 {
             grid-template-columns: 1fr;
         }
+
+        #section6{
+            grid-template-columns: repeat(2,1fr);
+            padding: 1.8rem;
+            .outlet{
+                gap: 1rem;
+
+                div{
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+
+    footer{
+        #email_section{
+            grid-template-columns: repeat(3,auto);
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+
+        #address_section{
+            grid-template-columns: repeat(3,auto);
+            gap: 2rem;
+            justify-items: start;
+        }
     }
 }
 
@@ -84,6 +111,7 @@
         }
 
         #section2 {
+            padding: 1rem;
             section {
                 grid-template-columns: 1fr;
                 gap: 1rem;
@@ -91,6 +119,8 @@
         }
 
         #section3,#section5 {
+            padding: 1rem;
+            place-items: center;
             section {
                 grid-template-columns: 1fr;
                 gap: 1rem;
@@ -98,10 +128,11 @@
         }
 
         #section4 {
-
+            padding: 1rem;
             #dealOfDay,
             #womensClothsDeal {
                 background-size: 100% 100%;
+                padding: 1.5rem 1rem;
 
                 #countdownTimer {
                     grid-template-columns: repeat(4, 1fr);
@@ -115,6 +146,24 @@
                     }
                 }
             }
+        }
+
+        #section6{
+            grid-template-columns: repeat(1,1fr);
+            padding: 1rem;
+        }
+    }
+
+    footer{
+        #email_section{
+            grid-template-columns: repeat(1,1fr);
+            gap: 1.1rem;
+            padding: 1rem;
+        }
+
+        #address_section{
+            grid-template-columns: 1fr;
+            gap: 2rem;
         }
     }
 }
