@@ -1,0 +1,40 @@
+main #compare {
+  padding: 1.5rem;
+}
+main #compare table {
+  border-collapse: collapse;
+  text-align: center;
+}
+main #compare table img {
+  width: 100%;
+  height: 100%;
+}
+main #compare table span {
+  color: #218F76;
+  font-weight: bold;
+}
+main #compare table button {
+  width: 5.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #218F76;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+main #compare table button:hover {
+  border: 1px solid #218F76;
+  color: #218F76;
+  background-color: #FFFFFF;
+}
+main #compare table i {
+  cursor: pointer;
+}
+main #compare table,
+main #compare th,
+main #compare td {
+  border: 1px solid;
+  padding: 1rem;
+}/*# sourceMappingURL=compare.css.map */

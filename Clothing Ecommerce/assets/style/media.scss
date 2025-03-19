@@ -55,7 +55,8 @@
             }
         }
 
-        #section3,#section5 {
+        #section3,
+        #section5 {
             section {
                 grid-template-columns: 1fr 1fr;
                 gap: 2rem;
@@ -67,37 +68,61 @@
             grid-template-columns: 1fr;
         }
 
-        #section6{
-            grid-template-columns: repeat(2,1fr);
+        #section6 {
+            grid-template-columns: repeat(2, 1fr);
             padding: 1.8rem;
-            .outlet{
+
+            .outlet {
                 gap: 1rem;
 
-                div{
+                div {
                     gap: 0.5rem;
                 }
             }
         }
 
         // My Account Page
-        #myAccount{
+        #myAccount {
             padding: 2rem;
+        }
+
+        // Compare Page Styling
+        #compare {
+            padding: 0.5rem;
+            table{
+                img{
+                    width: 75%;
+                    height: 75%;
+                }
+            }
+            table,
+            th,
+            td {
+                padding: 0.5rem;
+            }
+        }
+
+        // Login Page Styling
+        #login{
+            grid-template-columns: 1fr;
+            padding: 2rem;
+            gap: 1.5rem;
         }
     }
 
-    footer{
-        #email_section{
-            grid-template-columns: repeat(3,auto);
+    footer {
+        #email_section {
+            grid-template-columns: repeat(3, auto);
             gap: 1.5rem;
             padding: 1.5rem;
 
-            p{
+            p {
                 font-size: 0.9rem;
             }
         }
 
-        #address_section{
-            grid-template-columns: repeat(3,auto);
+        #address_section {
+            grid-template-columns: repeat(3, auto);
             gap: 2rem;
             justify-items: start;
         }
@@ -121,28 +146,32 @@
 
         #section2 {
             padding: 1rem;
+
             section {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
         }
 
-        #section3,#section5 {
+        #section3,
+        #section5 {
             padding: 1rem;
             place-items: center;
+
             section {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
 
             // Shop Page | main Section3
-            #pageNumbers{
-                grid-template-columns: 10% repeat(6,1fr) 10%;
+            #pageNumbers {
+                grid-template-columns: 10% repeat(6, 1fr) 10%;
             }
         }
 
         #section4 {
             padding: 1rem;
+
             #dealOfDay,
             #womensClothsDeal {
                 background-size: 100% 100%;
@@ -162,32 +191,41 @@
             }
         }
 
-        #section6{
-            grid-template-columns: repeat(1,1fr);
+        #section6 {
+            grid-template-columns: repeat(1, 1fr);
             padding: 1rem;
         }
 
-         // My Account Page
-         #pageNotify{
+        // My Account Page
+        #pageNotify {
             padding: 1.5rem;
-         }
-         #myAccount{
+        }
+
+        #myAccount {
             padding: 1rem;
             grid-template-columns: 1fr;
-            div:p{
+
+            div:p {
                 padding: 0.2rem;
             }
         }
+
+        // Login Page Styling
+        #login{
+            grid-template-columns: 1fr;
+            padding: 1rem;
+            gap: 1rem;
+        }
     }
 
-    footer{
-        #email_section{
-            grid-template-columns: repeat(1,1fr);
+    footer {
+        #email_section {
+            grid-template-columns: repeat(1, 1fr);
             gap: 1.1rem;
             padding: 1rem;
         }
 
-        #address_section{
+        #address_section {
             grid-template-columns: 1fr;
             gap: 2rem;
         }

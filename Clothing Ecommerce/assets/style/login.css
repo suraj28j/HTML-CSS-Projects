@@ -1,0 +1,33 @@
+main #login {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3rem;
+  padding: 2rem 10rem;
+}
+main #login div {
+  border: 1px solid;
+  padding: 1.5rem;
+}
+main #login div form {
+  display: grid;
+  gap: 1rem;
+}
+main #login div form input {
+  padding: 0.7rem;
+}
+main #login div form button {
+  width: 5.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  color: #FFFFFF;
+  background-color: #218F76;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+main #login div form button:hover {
+  border: 1px solid #218F76;
+  color: #218F76;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,28 @@
+@import "resource";
+
+main{
+    #login{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 3rem;
+        padding: 2rem 10rem;
+
+        div{
+            border: 1px solid;
+            padding: 1.5rem;
+
+            form{
+                display: grid;
+                gap: 1rem;
+                
+                input{
+                    padding: 0.7rem;
+                }
+                button{
+                    @include btn($bg-color1);
+                }
+            }
+        }
+
+    }
+}

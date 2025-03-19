@@ -41,7 +41,8 @@
     padding: 0;
     margin-top: 2rem;
   }
-  main #section3 section, main #section5 section {
+  main #section3 section,
+  main #section5 section {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 0;
@@ -61,6 +62,23 @@
   }
   main #myAccount {
     padding: 2rem;
+  }
+  main #compare {
+    padding: 0.5rem;
+  }
+  main #compare table img {
+    width: 75%;
+    height: 75%;
+  }
+  main #compare table,
+  main #compare th,
+  main #compare td {
+    padding: 0.5rem;
+  }
+  main #login {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1.5rem;
   }
   footer #email_section {
     grid-template-columns: repeat(3, auto);
@@ -93,15 +111,18 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  main #section3, main #section5 {
+  main #section3,
+  main #section5 {
     padding: 1rem;
     place-items: center;
   }
-  main #section3 section, main #section5 section {
+  main #section3 section,
+  main #section5 section {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  main #section3 #pageNumbers, main #section5 #pageNumbers {
+  main #section3 #pageNumbers,
+  main #section5 #pageNumbers {
     grid-template-columns: 10% repeat(6, 1fr) 10%;
   }
   main #section4 {
@@ -135,6 +156,11 @@
   }
   main #myAccount div:p {
     padding: 0.2rem;
+  }
+  main #login {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
   }
   footer #email_section {
     grid-template-columns: repeat(1, 1fr);
