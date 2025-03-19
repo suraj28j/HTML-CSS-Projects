@@ -64,6 +64,9 @@
     gap: 1.5rem;
     padding: 1.5rem;
   }
+  footer #email_section p {
+    font-size: 0.9rem;
+  }
   footer #address_section {
     grid-template-columns: repeat(3, auto);
     gap: 2rem;

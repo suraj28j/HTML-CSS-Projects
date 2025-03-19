@@ -184,7 +184,52 @@ main #section5 section .item_info {
   border-radius: 10px;
   padding: 0.5rem;
   display: grid;
-  gap: 0.7rem;
+  gap: 0.5rem;
+}
+main #section3 section .item_info .card,
+main #section5 section .item_info .card {
+  position: relative;
+}
+main #section3 section .item_info .card span,
+main #section5 section .item_info .card span {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #218F76;
+  color: #FFFFFF;
+  padding: 0.1rem 0.4rem;
+  border-radius: 25px;
+  z-index: 2;
+}
+main #section3 section .item_info .card img,
+main #section5 section .item_info .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+main #section3 section .item_info .card .over,
+main #section5 section .item_info .card .over {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+main #section3 section .item_info .card .over .watch_icons,
+main #section5 section .item_info .card .over .watch_icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #section3 section .item_info .card .over .watch_icons i,
+main #section5 section .item_info .card .over .watch_icons i {
+  background-color: #218F76;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+main #section3 section .item_info .card:hover .over,
+main #section5 section .item_info .card:hover .over {
+  opacity: 1;
 }
 main #section3 section .item_info img,
 main #section5 section .item_info img {
@@ -212,8 +257,8 @@ main #section5 section .item_info button:hover {
   color: #218F76;
   background-color: #FFFFFF;
 }
-main #section3 section .item_info div,
-main #section5 section .item_info div {
+main #section3 section .item_info #item_price,
+main #section5 section .item_info #item_price {
   display: grid;
   grid-template-columns: 20% 20% 60%;
   justify-items: end;
