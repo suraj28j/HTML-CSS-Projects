@@ -1,0 +1,31 @@
+@mixin btn($btnCOlor) {
+    width: 5.5rem;
+    height: 2.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    color: $font-color2;
+    background-color: $btnCOlor;
+    font-weight: 900;
+    font-size: 0.9rem;
+
+    &:hover {
+        border: 1px solid $bg-color1;
+        color: $bg-color1;
+        background-color: $bg-color2;
+    }
+}
+
+@mixin icons {
+    width: 20px;
+    height: 20px;
+}
+
+// colors
+$bg-color1: #218F76;
+$bg-color2: #FFFFFF;
+$bg-color3: #000000;
+$bg-color4: #F2F1EF;
+$font-color1: #218F76;
+$font-color2: #FFFFFF;
+$font-color3: #000000;

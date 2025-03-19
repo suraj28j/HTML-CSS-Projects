@@ -59,6 +59,9 @@
   main #section6 .outlet div {
     gap: 0.5rem;
   }
+  main #myAccount {
+    padding: 2rem;
+  }
   footer #email_section {
     grid-template-columns: repeat(3, auto);
     gap: 1.5rem;
@@ -98,6 +101,9 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+  main #section3 #pageNumbers, main #section5 #pageNumbers {
+    grid-template-columns: 10% repeat(6, 1fr) 10%;
+  }
   main #section4 {
     padding: 1rem;
   }
@@ -119,6 +125,16 @@
   main #section6 {
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
+  }
+  main #pageNotify {
+    padding: 1.5rem;
+  }
+  main #myAccount {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+  main #myAccount div:p {
+    padding: 0.2rem;
   }
   footer #email_section {
     grid-template-columns: repeat(1, 1fr);

@@ -1,0 +1,29 @@
+main #myAccount {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
+  padding: 5rem;
+}
+main #myAccount div:first-child {
+  display: grid;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #218F76;
+  border-radius: 10px;
+}
+main #myAccount div:first-child p {
+  padding: 1rem;
+  cursor: pointer;
+}
+main #myAccount div:first-child p:hover {
+  background-color: #218F76;
+}
+main #myAccount div:nth-child(2) {
+  border: 1px solid #F2F1EF;
+}
+main #myAccount div:nth-child(2) p {
+  padding: 1rem;
+}
+main #myAccount div:nth-child(2) p:first-child {
+  background-color: #F2F1EF;
+}/*# sourceMappingURL=myAccount.css.map */

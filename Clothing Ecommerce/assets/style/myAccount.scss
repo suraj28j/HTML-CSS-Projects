@@ -1,0 +1,39 @@
+@import "resource";
+
+main {
+    #myAccount {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+        padding: 5rem;
+
+        div:first-child {
+            display: grid;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid $bg-color1;
+            border-radius: 10px;
+
+            p {
+                padding: 1rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $bg-color1;
+                }
+            }
+        }
+
+        div:nth-child(2) {
+            border: 1px solid $bg-color4;
+
+            p {
+                padding: 1rem;
+
+                &:first-child {
+                    background-color: $bg-color4;
+                }
+            }
+        }
+    }
+}

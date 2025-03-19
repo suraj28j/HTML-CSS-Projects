@@ -78,6 +78,11 @@
                 }
             }
         }
+
+        // My Account Page
+        #myAccount{
+            padding: 2rem;
+        }
     }
 
     footer{
@@ -129,6 +134,11 @@
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
+
+            // Shop Page | main Section3
+            #pageNumbers{
+                grid-template-columns: 10% repeat(6,1fr) 10%;
+            }
         }
 
         #section4 {
@@ -155,6 +165,18 @@
         #section6{
             grid-template-columns: repeat(1,1fr);
             padding: 1rem;
+        }
+
+         // My Account Page
+         #pageNotify{
+            padding: 1.5rem;
+         }
+         #myAccount{
+            padding: 1rem;
+            grid-template-columns: 1fr;
+            div:p{
+                padding: 0.2rem;
+            }
         }
     }
 
